@@ -1,0 +1,28 @@
+<app-menu-bar></app-menu-bar>
+
+<div class="par">
+    <h5>Reservaciones De todos Los Hoteles</h5>
+</div>
+
+<div class="container" id="contpos">
+    <div class="row">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Nombre Hotel</th>
+                <th scope="col">Fecha Reserva</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let reser of reserGeneral">
+                <th scope="row"><img src="../../../assets/images/reser.png" id="tmares" alt=""></th>
+                <td>{{reser.nombreUsuario}}</td>
+                <td>{{reser.nombreHotel}}</td>
+                <td>{{reser.fechaReserva}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

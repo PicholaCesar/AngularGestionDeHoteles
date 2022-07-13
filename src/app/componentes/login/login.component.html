@@ -1,0 +1,22 @@
+
+<app-menu></app-menu>
+
+<html>
+  <body>
+    <div class="form animated flipInX">
+        <h2>Login</h2>
+        <form>
+            
+            <input placeholder="Email" type="text" class="imp" name="email" #email="ngModel" [(ngModel)]="usuarioModel.email">
+            <input placeholder="Password" type="password" name="password" #password="ngModel" [(ngModel)]="usuarioModel.password">
+            
+      <button class="imp" (click)="login()">Login</button>
+      <h3>¿Quieres Registrar una cuenta?</h3>
+      <a routerLink="/registro">Ir a Registrar cuenta</a>
+
+      </form>
+      </div>
+  </body>
+  </html>
+
+

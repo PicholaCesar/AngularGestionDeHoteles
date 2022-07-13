@@ -1,0 +1,21 @@
+<app-nav-usuario></app-nav-usuario>
+
+<div class="conHeade">
+ <h1 id="p1">Eventos</h1>
+ <h1 id="p2"> Proximos</h1>
+
+</div>
+
+ <div class="container" id="contenedor">
+    <div class="row">
+        <div class="card bg-dark text-white col-5" *ngFor="let eventos of arrayeventos" id="posicar">
+            <img src="../../../assets/images/evento1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">{{eventos.nombreEvento}}</h5>
+              <p class="card-text">{{eventos.descripcion}}</p>
+              <p class="card-text">Fecha : {{eventos.fecha}}</p>
+              <p class="card-text">Hora : {{eventos.hora}}</p>
+            </div>
+          </div>
+    </div>
+ </div>

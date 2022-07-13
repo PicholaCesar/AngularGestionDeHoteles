@@ -1,0 +1,74 @@
+<app-menu-bar></app-menu-bar>
+
+ <h4 class="photelere">Hoteles registrados</h4>
+
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+    id="botonagragr">Agregar Hotele</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Datos del Hotel</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nombre Del Hotel</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        name="nombre" #nombre="ngModel" [(ngModel)]="modeloHotelesPos.nombre">
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <label for="exampleInputEmail1" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="direccion" #direccion="ngModel" [(ngModel)]="modeloHotelesPos.direccion">
+                        </div>
+                        <div class="col-4">
+                            <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="telefono" #telefono="ngModel" [(ngModel)]="modeloHotelesPos.telefono">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" id="tamadesc"
+                            aria-describedby="emailHelp" name="descr" #descr="ngModel" [(ngModel)]="modeloHotelesPos.descripcion">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="exampleInputPassword1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1" name="email" #email="ngModel" [(ngModel)]="modeloHotelesPos.email">
+                        </div>
+                        <div class="col-6">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="pass" #pass="ngModel" [(ngModel)]="modeloHotelesPos.password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal" (click)="agregarHotel()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="contenedorcar">
+    <div class="row">
+        <div class="card" style="width: 15rem;" *ngFor="let hoteles of arraymodelHoteles" id="colarcar">
+            <img src="../../../assets/images/homeuse.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5>{{hoteles.nombre}}</h5>
+                <p class="card-text" id="desc">{{hoteles.descripcion}}</p>
+                <p class="card-text" id="dire">{{hoteles.direccion}}</p>
+                <p class="card-text" id="tel">{{hoteles.telefono}}</p>
+            </div>
+        </div>
+    </div>
+</div>

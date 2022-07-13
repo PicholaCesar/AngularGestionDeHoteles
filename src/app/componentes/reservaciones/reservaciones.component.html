@@ -1,0 +1,29 @@
+<app-navadminhotel></app-navadminhotel>
+ 
+<h5 id="titulop1">RESERVACIONES DEL HOTEL</h5>
+
+<div class="container" id="colocatable">
+    <div class="row">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col-1"></th>
+                <th scope="col-3">Nombre Usuario</th>
+                <th scope="col-3">Cuarto</th>
+                <th scope="col-3">Fecha</th>
+                <th scope="col-3">Hora</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let reservacion of listaReservacion">
+              <tr>
+                <th scope="row"><img src="../../../assets/images/reser.png" id="tamaImagre" alt=""></th>
+                <td>{{reservacion.nombreUsuario}}</td>
+                <td>{{reservacion.cuarto}}</td>
+                <td>{{reservacion.fechaReserva}}</td>
+                <td>{{reservacion.hora}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+

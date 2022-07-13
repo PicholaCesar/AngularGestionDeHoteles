@@ -1,0 +1,27 @@
+
+<app-menu-bar></app-menu-bar>
+
+<h4 id="parrafo1">Usuarios Registrados</h4>
+
+
+<div class="container" id="contactos">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col-1">#</th>
+            <th scope="col-1">Imagen</th>
+            <th scope="col-1">Nombre</th>
+            <th scope="col-1">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let persona of modeloUsuarioRegistrado">
+            <th scope="row">1</th>
+            <td><img src="../../../assets/images/usuarios.png" id="avatar" alt=""></td>
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+

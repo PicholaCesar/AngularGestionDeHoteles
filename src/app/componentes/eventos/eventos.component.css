@@ -1,0 +1,38 @@
+#posicar{
+
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#contenedor{
+    margin-top: 8%;
+    width: 85%;
+    margin-left: 10%;
+}
+
+
+.conHeade{
+
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to right, #0f2027da, #203a43a4, #2c536483), /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    url(../../../assets/images/eventos.jpg);
+}
+
+#p1{
+
+    color: white;
+    position: relative;
+    margin-left: 10%;
+    top: 30px;
+    font-size: 60px;
+    
+}
+
+#p2{
+    color: rgb(255, 217, 5);
+    font-size: 72px;
+    margin-top: 10px;
+    margin-left: 10%;
+    
+}

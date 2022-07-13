@@ -1,0 +1,17 @@
+
+<app-menu></app-menu>
+
+<html>
+  <body>
+    <div class="form animated flipInX">
+        <h2>Registro</h2>
+        <form>
+            <input placeholder="User" type="text" class="imp" name="name" #name="ngModel" [(ngModel)]="modeloUsuario.nombre">
+            <input placeholder="Email" type="email" class="imp" name="si" #si="ngModel" [(ngModel)]="modeloUsuario.email">
+            <input placeholder="Password" type="password"class="imp" name="password" #password="ngModel" [(ngModel)]="modeloUsuario.password">
+            
+      <button class="imp" (click)="agregarUsuario()">Login</button>
+      </form>
+      </div>
+  </body>
+  </html>

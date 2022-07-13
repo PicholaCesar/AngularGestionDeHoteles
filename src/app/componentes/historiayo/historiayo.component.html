@@ -1,0 +1,27 @@
+<app-nav-usuario></app-nav-usuario>
+
+
+<div class="container" id="tamaniotabla">
+    <div class="row">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Nombre Hotel</th>
+                <th scope="col">Fecha reserva</th>
+                <th scope="col">hora</th>
+                <th scope="col">cuarto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let reservacion of mireservacion">
+                <th scope="row"><img id="logore" src="../../../assets/images/reser.png" alt=""></th>
+                <td>{{reservacion.nombreHotel}}</td>
+                <td>{{reservacion.fechaReserva}}</td>
+                <td>{{reservacion.hora}}</td>
+                <td>{{reservacion.cuarto}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

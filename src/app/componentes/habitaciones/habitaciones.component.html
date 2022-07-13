@@ -1,0 +1,68 @@
+<app-navadminhotel></app-navadminhotel>
+
+<h5 class="hab">HABITACIONES</h5>
+
+<!-- Button trigger modal -->
+
+<button type="button" class="btn btn-outline-light" id="posbt" data-bs-toggle="modal" data-bs-target="#exampleModal">AGREGAR HABITACION</button>
+<!-- <button type="button" class="btn btn-success" style="background: #184481" id="posbt" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Agregar Habitacion
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Datos de Habitacion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre Habitacion</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nombre" #nombre="ngModel" [(ngModel)]="modeloHanitacionPOS.NombreHabitacion">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Precio</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="precio" #precio="ngModel" [(ngModel)]="modeloHanitacionPOS.precio">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="agregarhabitacion()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="contenecar">
+  <div class="row">
+    <div class="card" style="width: 9rem;" id="posCar" *ngFor="let habitaciones of ArrayHabitaciones"
+       [ngStyle]="{background: habitaciones.estado == false ? 'red': '#17D463'}">
+      <img src="../../../assets/images/habiaciones.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text" style="color: white">{{habitaciones.NombreHabitacion}}</p>
+      </div>
+      <div id="colarboton" >
+        <button *ngIf="habitaciones.estado == false" 
+        type="button" class="btn btn-secondary" 
+        (click)="cancelarrecerva(habitaciones.NombreHabitacion)"
+        (click)="obtenerFactura(habitaciones.NombreHabitacion)"
+        >Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="habitaciones">
+  <div class="row">
+
+  </div>
+</div> -->
+

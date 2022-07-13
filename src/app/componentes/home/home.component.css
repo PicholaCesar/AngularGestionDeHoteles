@@ -1,0 +1,70 @@
+img{
+    height: 425px;
+
+}
+
+.carrpos{
+  height: 400px;
+
+}
+
+
+#pone{
+   position: relative;
+   bottom: 240px;
+   margin-left: 20%;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   font-size: 62px;
+    
+}
+
+#pon2{
+    position: relative;
+    bottom: 240px;
+    margin-left: 20%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F2A516;
+    font-size: 62px;
+}
+
+#parrafo3{
+  position: relative;
+  bottom: 270px;
+  margin-left: 20%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 62px;
+}
+#parrafo4{
+    position: relative;
+    bottom: 270px;
+    margin-left: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 75px;
+    color:#F2A516;
+}
+
+
+
+.buscar{
+    position: relative;
+    width: 300px;
+    margin-left: 70%;
+    margin-top: 200px;
+}
+
+ #contaposicion{
+
+    margin-top: 5%;
+ }
+
+ #carposo{
+       
+    margin-left: 10px;
+    margin-top: 6px;
+ }
+
+ #tamaimegncar{
+    height: 200px;
+ }

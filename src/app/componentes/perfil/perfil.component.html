@@ -1,0 +1,32 @@
+
+<app-nav-usuario></app-nav-usuario>
+
+<div class="centrarimagen">
+    <img src="../../../assets/images/usuarios.png" id="foto" alt="">
+
+</div>
+
+<div class="container col-6" >
+    <div class="row">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleInputEmail1"name="nombre" #nombre="ngModel" [(ngModel)]="aaraydemiperfi.nombre" >
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" #email="ngModel" [(ngModel)]="aaraydemiperfi.email">
+             </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Password Anterios</label>
+                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password Nuevo</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="actualizar()">Actualizar Datos</button>
+          </form>
+    </div>
+</div>
+<button type="button" class="btn btn-outline-danger" id="eliminar" >Eliminar Cuenta</button>

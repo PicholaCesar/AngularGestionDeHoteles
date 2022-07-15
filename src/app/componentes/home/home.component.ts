@@ -11,6 +11,7 @@ import { HotelesService } from 'src/app/services/hoteles.service';
 export class HomeComponent implements OnInit {
 
   public modeloHoteles: hoteles;
+  public buscar
 
   constructor(public _hotelesservices: HotelesService) { }
 
@@ -21,8 +22,9 @@ export class HomeComponent implements OnInit {
   obtenerHoteles(){
     this._hotelesservices.obtenerHoteles().subscribe((respuesta)=>{
      this.modeloHoteles = respuesta.hoteles
+     console.log(respuesta)
     },(error)=>{
-      
+      console.log(<any>error)
 
     })
   }

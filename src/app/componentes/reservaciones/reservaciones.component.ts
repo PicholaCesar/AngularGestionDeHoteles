@@ -11,6 +11,7 @@ import { UsuarioService } from 'src/app/services/usuario.service';
 export class ReservacionesComponent implements OnInit {
   public listaReservacion
   public token
+  public buscar
 
   constructor(public _reservacion: ReservacionService, public _usuario: UsuarioService) {
 

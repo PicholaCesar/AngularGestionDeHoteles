@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": "dist/angular-gestion-de-hoteles",
+    "ignore":[
+      "firebase.json",
+      "**/node_modules/**"
+    ],
+    "rewrites":[
+      {
+        "source":"**",
+        "destination":"/index.html"
+      }
+    ]
+  }
+}

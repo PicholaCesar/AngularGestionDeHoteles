@@ -22,6 +22,9 @@ import { HistoriayoComponent } from './componentes/historiayo/historiayo.compone
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { GraficaComponent } from './componentes/grafica/grafica.component';
 import { NgChartsModule } from 'ng2-charts';
+import { HotelesPipe } from './pipes/hoteles.pipe';
+import { UsuariosPipe } from './pipes/usuarios.pipe';
+import { UsuaPipe } from './pipes/usua.pipe';
 
 
 
@@ -45,6 +48,9 @@ import { NgChartsModule } from 'ng2-charts';
     HistoriayoComponent,
     PerfilComponent,
     GraficaComponent,
+    HotelesPipe,
+    UsuariosPipe,
+    UsuaPipe,
   ],
   imports: [
     BrowserModule,

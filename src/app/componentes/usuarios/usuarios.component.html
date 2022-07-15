@@ -4,6 +4,16 @@
 <h4 id="parrafo1">Usuarios Registrados</h4>
 
 
+<div class="col-3" id="buscar">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Buscar Usuario registrado" aria-label="Recipient's username" aria-describedby="button-addon2" [(ngModel)]="search">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+  </div>
+</div>
+
+
+
+
 <div class="container" id="contactos">
     <table class="table">
         <thead>
@@ -15,8 +25,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let persona of modeloUsuarioRegistrado">
-            <th scope="row">1</th>
+          <tr *ngFor="let persona of modeloUsuarioRegistrado | usua:search" >
+            <th scope="row"></th>
             <td><img src="../../../assets/images/usuarios.png" id="avatar" alt=""></td>
             <td>{{persona.nombre}}</td>
             <td>{{persona.email}}</td>

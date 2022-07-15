@@ -5,6 +5,10 @@
 /tmp
 /out-tsc
 /bazel-out
+        .firebase/
+        .firebaserc
+        database.rules.json
+        firebase.json
 
 # Node
 /node_modules

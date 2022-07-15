@@ -11,6 +11,7 @@ import { UsuarioService } from 'src/app/services/usuario.service';
 export class UsuariosComponent implements OnInit {
 
   public modeloUsuarioRegistrado
+  public search
 
   public token
 

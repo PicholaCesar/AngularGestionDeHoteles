@@ -2,6 +2,15 @@
  
 <h5 id="titulop1">RESERVACIONES DEL HOTEL</h5>
 
+<div class="col-3" id="buscar">
+  <div class="input-group">
+    <input type="text" class="form-control " placeholder="Buscar usurios" aria-label="Recipient's username" aria-describedby="button-addon2"[(ngModel)]="buscar">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+  </div>
+</div>
+
+
+
 <div class="container" id="colocatable">
     <div class="row">
         <table class="table">
@@ -14,7 +23,7 @@
                 <th scope="col-3">Hora</th>
               </tr>
             </thead>
-            <tbody *ngFor="let reservacion of listaReservacion">
+            <tbody *ngFor="let reservacion of listaReservacion | usuarios:buscar">
               <tr>
                 <th scope="row"><img src="../../../assets/images/reser.png" id="tamaImagre" alt=""></th>
                 <td>{{reservacion.nombreUsuario}}</td>

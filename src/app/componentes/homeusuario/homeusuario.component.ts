@@ -34,6 +34,7 @@ export class HomeusuarioComponent implements OnInit {
   public infoHotel
   public token
   public nombreHotel
+  public buscar
 
   constructor(public _hoteles: HotelesService, 
               public _habitaciones: HabitacionesService, 

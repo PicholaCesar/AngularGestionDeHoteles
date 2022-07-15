@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class HabitacionesService {
 
 
-  public url: String = 'http://localhost:3000/api'
+  public url: String = 'https://gestiondehoteles.herokuapp.com/api'
   public headersVariable = new HttpHeaders().set('content-type','application/json')
 
   constructor(public _http: HttpClient) { }
